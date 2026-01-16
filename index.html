@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>WiFi Bill Notebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              bengali: ['Noto Serif Bengali', 'serif'],
+            },
+            colors: {
+              paper: '#fcfcf7',
+              'paper-line': '#e5e7eb',
+              'paper-red': '#fca5a5',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f3f4f6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .notebook-lines {
+        background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+        background-size: 100% 2rem; /* Matches line height loosely */
+        background-attachment: local;
+      }
+      /* Hide scrollbar for clean look */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1",
+    "qrcode": "https://esm.sh/qrcode@1.5.3",
+    "jsqr": "https://esm.sh/jsqr@1.4.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

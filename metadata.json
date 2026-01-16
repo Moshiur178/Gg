@@ -1,0 +1,7 @@
+{
+  "name": "Copy of WiFi Bill Notebook (Smart)",
+  "description": "A digital notebook for managing WiFi bills with handwriting support, photo scanning via Gemini AI, and English/Bangla localization.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
